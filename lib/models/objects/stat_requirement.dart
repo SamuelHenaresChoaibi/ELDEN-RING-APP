@@ -1,6 +1,7 @@
+//Clase que representa un requisito de atributo para usar hechizos, armas o invocaciones
 class StatRequirement {
-  final String name;
-  final int amount;
+  final String name; //Nombre del atributo requerido (Intelligence, Faith, Arcane, Strength, Dexterity...)
+  final int amount; //Cantidad mínima necesaria del atributo para poder usar el objeto
 
   StatRequirement({required this.name, required this.amount});
 

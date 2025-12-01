@@ -1,6 +1,7 @@
+//Clase que representa el daño de un arma
 class AttackPower {
-  final String name; 
-  final int amount;
+  final String name; //Nombre del tipo de daño (Phys, Magic, Fire, etc.)
+  final int amount; //Cantidad de daño de ese tipo
 
   AttackPower({
     required this.name,
