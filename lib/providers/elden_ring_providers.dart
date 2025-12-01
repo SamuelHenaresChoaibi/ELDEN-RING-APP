@@ -7,7 +7,7 @@ import 'package:elden_ring_app/models/modelos.dart';
 class EldenRingProvider extends ChangeNotifier {
   final String _baseUrl = 'eldenring.fanapis.com'; //Dominio de la API
   final String _basePath = '/api';
-  final String _limit = '50'; //Máximo de elementos por petición
+  final String _limit = '20'; //Máximo de elementos por petición
 
   //Listas que almacenan todos los datos descargados
   List<Weapon> weapons = []; //Todas las armas

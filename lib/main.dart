@@ -28,13 +28,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Elden Ring Wiki',
-      initialRoute: 'home', //Pantalla inicial al abrir la app
+      initialRoute: 'home',
       routes: {
         'home': (BuildContext context) => HomeScreen(), //Pantalla principal con los sliders
         'details': (BuildContext context) => EldenDetailsScreen(), //Pantalla de detalle de cualquier objeto
       },
       theme: ThemeData.light().copyWith(
-        //Tema claro con barra superior en color índigo (puedes cambiarlo a negro si quieres más rollo Elden Ring)
         appBarTheme: const AppBarTheme(backgroundColor: Colors.indigo),
       ),
     );
