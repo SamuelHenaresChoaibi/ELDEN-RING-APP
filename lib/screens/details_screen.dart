@@ -206,8 +206,8 @@ class _ItemStats extends StatelessWidget {
             Text('Peso: ${item.weight}', style: const TextStyle(fontSize: 16)),
           ]
 
-          //HECHIZOS E INCANTACIONES
-          else if (type == 'sorcery' || type == 'incantation') ...[
+          //HECHIZOS
+          else if (type == 'sorcery' ) ...[
             Text('Costo FP: ${item.cost}', style: const TextStyle(fontSize: 16)),
             Text('Slots: ${item.slots}', style: const TextStyle(fontSize: 16)),
             const SizedBox(height: 10),
@@ -222,8 +222,8 @@ class _ItemStats extends StatelessWidget {
             Text(item.effect ?? '', style: const TextStyle(fontStyle: FontStyle.italic)),
           ]
 
-          //TALISMANES Y OTROS OBJETOS
-          else if (type == 'talisman' || type == 'item') ...[
+          //TALISMANES
+          else if (type == 'talisman') ...[
             Text(
               item.effect ?? 'Sin efecto especificado',
               style: const TextStyle(fontSize: 16, fontStyle: FontStyle.italic, color: Colors.green),
