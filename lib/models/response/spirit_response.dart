@@ -1,9 +1,10 @@
 import 'package:elden_ring_app/models/modelos.dart';
 
+//Clase que representa la respuesta completa de la API al solicitar todas las Cenizas de Espíritu
 class SpiritsResponse {
-  final bool success;
-  final int count;
-  final List<Spirit> data;
+  final bool success; //Indica si la petición fue exitosa
+  final int count; //Número total de espíritus devueltos
+  final List<Spirit> data; //Lista con todos los espíritus obtenidos
 
   SpiritsResponse({
     required this.success,

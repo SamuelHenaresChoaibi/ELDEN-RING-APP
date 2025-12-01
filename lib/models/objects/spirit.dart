@@ -1,11 +1,12 @@
+//Clase que representa una Ceniza de Espíritu invocable del juego
 class Spirit {
-  final String id;
-  final String name;
-  final String image;
-  final String description;
-  final int fpCost;    
-  final int hpCost;
-  final String effect;
+  final String id; //ID único del espíritu
+  final String name; //Nombre del espíritu (ej: Lhutel la Sin Cabeza)
+  final String image; //URL de la imagen del espíritu
+  final String description; //Descripción/lore del espíritu
+  final int fpCost; //Costo en FP para invocarlo (puede ser 0)
+  final int hpCost; //Costo en HP para invocarlo (algunos espíritus caros lo usan)
+  final String effect; //Efecto o comportamiento del espíritu en combate
 
   Spirit({
     required this.id,

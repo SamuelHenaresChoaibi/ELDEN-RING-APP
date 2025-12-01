@@ -1,9 +1,10 @@
 import 'package:elden_ring_app/models/modelos.dart';
 
+//Clase que representa la respuesta completa de la API al pedir todas las armaduras
 class ArmorResponse {
-  final bool success;
-  final int count;
-  final List<Armor> data;
+  final bool success; //Indica si la petición fue exitosa
+  final int count; //Número total de armaduras devueltas
+  final List<Armor> data; //Lista con todas las armaduras obtenidas
 
   ArmorResponse({
     required this.success,

@@ -1,14 +1,15 @@
 import 'package:elden_ring_app/models/modelos.dart';
 
+//Clase que representa una armadura de Elden Ring
 class Armor {
-  final String id;
-  final String name;
-  final String image;
-  final String description;
-  final String category;
-  final List<DamageNegation> dmgNegation;
-  final List<Resistance> resistance;
-  final double weight;
+  final String id; //ID único de la armadura
+  final String name; //Nombre de la armadura
+  final String image; //URL de la imagen de la armadura
+  final String description; //Descripción/lore de la armadura
+  final String category; //Categoría (Casco, Pecho, Guantes, Grebas)
+  final List<DamageNegation> dmgNegation; //Negación de daño físico, mágico, etc.
+  final List<Resistance> resistance; //Resistencias a efectos de estado
+  final double weight; //Peso de la pieza de armadura
 
   Armor({
     required this.id,

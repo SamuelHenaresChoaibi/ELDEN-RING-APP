@@ -1,6 +1,7 @@
+//Clase que representa la negación de daño de una armadura frente a un tipo concreto
 class DamageNegation {
-  final String name; 
-  final double amount;
+  final String name; //Tipo de daño que se niega (Phy, Mag, Fire, Lightning, Holy...)
+  final double amount; //Porcentaje o valor de reducción del daño recibido (valor decimal)
 
   DamageNegation({required this.name, required this.amount});
 

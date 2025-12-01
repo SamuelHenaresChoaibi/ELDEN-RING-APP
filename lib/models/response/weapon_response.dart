@@ -1,9 +1,10 @@
 import 'package:elden_ring_app/models/modelos.dart';
 
+//Clase que representa la respuesta completa de la API al solicitar todas las armas
 class WeaponsResponse {
-  final bool success;
-  final int count;
-  final List<Weapon> data;
+  final bool success; //Indica si la petición se completó con éxito
+  final int count; //Número total de armas devueltas
+  final List<Weapon> data;    //Lista con todas las armas obtenidas
 
   WeaponsResponse({required this.success, required this.count, required this.data});
 

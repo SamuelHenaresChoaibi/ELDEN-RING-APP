@@ -1,9 +1,10 @@
+//Clase que representa un talismán del juego
 class Talisman {
-  final String id;
-  final String name;
-  final String image;
-  final String description;
-  final String effect;
+  final String id; //ID único del talismán
+  final String name; //Nombre del talismán
+  final String image; //URL de la imagen del talismán
+  final String description; //Descripción/lore del talismán
+  final String effect; //Efecto que otorga al equiparlo
 
   Talisman({
     required this.id,

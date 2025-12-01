@@ -1,15 +1,16 @@
 import 'package:elden_ring_app/models/modelos.dart';
 
+//Clase que representa un hechizo (sorcery) del juego
 class Sorcery {
-  final String id;
-  final String name;
-  final String image;
-  final String description;
-  final String type;
-  final int cost;   
-  final int slots;  
-  final String effects;
-  final List<StatRequirement> requires;
+  final String id; //ID único del hechizo
+  final String name; //Nombre del hechizo
+  final String image; //URL de la imagen del hechizo
+  final String description; //Descripción/lore del hechizo
+  final String type; //Tipo de hechizo (por ejemplo: "Glintstone Sorcery")
+  final int cost; //Costo en FP para lanzar el hechizo
+  final int slots; //Número de ranuras de memoria que ocupa
+  final String effects; //Efectos del hechizo (texto descriptivo)
+  final List<StatRequirement> requires; //Requisitos de atributos para poder lanzarlo
 
   Sorcery({
     required this.id,
@@ -39,7 +40,7 @@ class Sorcery {
     );
   }
 
-  // Helpers mágicos
+  // Getters para obtener rápidamente los requisitos más comunes
   int get intRequired => requires.firstWhere((r) => r.name == "Intelligence", orElse: () => StatRequirement(name: "Intelligence", amount: 0)).amount;
   int get faithRequired => requires.firstWhere((r) => r.name == "Faith", orElse: () => StatRequirement(name: "Faith", amount: 0)).amount;
   int get arcaneRequired => requires.firstWhere((r) => r.name == "Arcane", orElse: () => StatRequirement(name: "Arcane", amount: 0)).amount;
