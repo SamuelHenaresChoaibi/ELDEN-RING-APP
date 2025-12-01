@@ -192,7 +192,7 @@ class _ItemStats extends StatelessWidget {
           const SizedBox(height: 10),
 
           //ARMAS Y ESCUDOS
-          if (type == 'weapon' || type == 'shield') ...[
+          if (type == 'weapon') ...[
             _buildAttackRow(item.attack),
             _buildDefenseRow(item.defence ?? []),
             _buildScalingRow(item.scalesWith ?? []),
